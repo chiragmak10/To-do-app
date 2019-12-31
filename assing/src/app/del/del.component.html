@@ -1,0 +1,10 @@
+<h4>Task Pending</h4>
+
+<div *ngFor="let item of pend_task| keyvalue">
+    <p class="d-block p-2 bg-primary text-white" >{{item.value}}</p>
+  </div>
+
+<div class="form-group" *ngFor="let p of delPost; let ind =index">
+    <h5 (click)='removeitem(ind,p)' class="d-block p-2 bg-primary text-white">{{ p }}</h5>
+</div>
+<app-done [value]='val'></app-done>

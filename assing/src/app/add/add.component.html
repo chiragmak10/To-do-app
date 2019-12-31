@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Welcome to Todo list</h1>
+    <hr>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter task to do....." name="post" [(ngModel)]="post">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="AddPost(post)" class="btn btn-primary">Add Task</button>
+    <hr>
+    <app-del [delPost]="parentpost"></app-del>
+</div>
